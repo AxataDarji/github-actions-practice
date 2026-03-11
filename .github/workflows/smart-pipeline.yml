@@ -34,4 +34,4 @@ jobs:
         run: echo "This is a feature branch push"
 
       - name: Print commit message
-        run: echo "Commit message: ${{ github.event.commits[0].message }}"
+        run: echo "Commit message ${{ github.event.commits[0].message }}"

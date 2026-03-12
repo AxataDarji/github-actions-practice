@@ -1,0 +1,14 @@
+{
+  "name": "cache-demo",
+  "version": "1.0.0",
+  "description": "Demo project for GitHub Actions caching",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests yet\""
+  },
+  "author": "Axata Darji",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0"
+  }
+}

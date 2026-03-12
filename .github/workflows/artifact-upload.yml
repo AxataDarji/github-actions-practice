@@ -1,0 +1,18 @@
+name: Artifact Upload
+
+on: workflow_dispatch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Generate file
+        run: |
+          echo "Test report generated on $(date)" > report.txt
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-report
+          path: report.txt
